@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/Bottom_style">
+        <TextView
+            android:id="@+id/second_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="课程时长"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/second_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            tools:text="学习人数"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/Bottom_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程叙述"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingBottom="3dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/second_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            tools:text="课程叙述课程叙述课程叙述课程叙述课程叙述课程叙述课程叙述课程叙述"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/Bottom_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授课讲师"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingBottom="3dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_margin="2dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/second_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/second_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="授课讲师的呢称"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/second_image"
+                android:layout_marginLeft="20sp"/>
+            <TextView
+                android:id="@+id/second_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="简介"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/second_image"
+                android:layout_marginLeft="16sp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
